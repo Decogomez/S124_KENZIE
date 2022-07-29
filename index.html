@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body style="background-color:#001aff;">
+
+    <form>
+
+        <h1 style="color:white ;"> Formulário Cadastro </h1>
+
+        <hr>
+        <label form="nome" style="color:white ;">Nome</label> <br>
+        <input type="text" id="nome" placeholder="Digite o seu nome" required="true" name="nome">
+
+        <br>
+
+        <label form="email" style="color:white ;">E-mail</label> <br>
+        <input type="email" id="email" placeholder="Digite o seu e-mail" required="true" name="email">
+
+        <br>
+
+        <label form="motivo" style="color:white ;">Motivação</label> <br>
+        <textarea placeholder="O que te motiva a participar deste evento?" cols="21" rows="5" id="motivo" required
+            name="motivo">
+        </textarea>
+
+        <br>
+
+        <label form="modulo" style="color:white ;">Selecione o seu módulo</label>
+
+        <br>
+
+        <select id="modulo" required="true" name="modulo">
+            <option value="">Escolha o seu módulo</option>
+            <option value="M1">M1</option>
+            <option value="M2">M2</option>
+            <option value="M3">M3</option>
+            <option value="M4">M4</option>
+        </select>
+
+        <br> 
+
+        <label form="senha" style="color:white ;">Cadastre uma senha</label> <br>
+        <input type="password" placeholder="Digite a sua senha" required="true" id="senha" name="senha">
+
+        <br>
+
+        <label form="confirma" style="color:white ;"></label>
+        <input type="password" placeholder="Confirme sua senha" required="true" id="confirma" name="confirm_senha">
+
+        <br>
+
+        <p style="color:white;">Deseja receber nossas newsletter? <br>
+
+            <label form="news" style="color:white ;">Sim</label>
+            <input type="radio" name="news" value="sim" id="Sim" required>
+
+            <br>
+
+            <label form="news" style="color:white ;">Não</label>
+            <input type="radio" name="news" value="input" id="Nao" required>
+
+            <br><br>
+
+            <button type="reset">Resetar</button>
+            <button type="submit">Enviar</button>
+
+    </form>
+</body>
+
+</html>
+
+
+<hr>
+
+
+<!-- nesse formulario cracudo faltou as labels, na vdd ele foi desenvolvido para treinar apenas minha desenvoltura com tabelas.-->
+<table border="10px" align="center">
+    <thead>
+        <tr>
+            <th colspan="3"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmw6F5cf2g-17_VHHjZmA3ZIcWYbw4zPkLhi_wlnYjzSbqe6efWmYbxzE3YmHfhYaCaKc&usqp=CAU">
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center" style="color:white ;">Nome</td>
+            <td><input type="text" id="nome" placeholder="Digite o seu nome" required="true" name="nome" size="29"></td>
+        </tr>
+        <tr>
+            <td align="center" style="color:white ;">E-mail</td>
+            <td><input type="text" id="nome" placeholder="Digite o seu E-mail" required="true" name="nome" size="29">
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="color:white ;">Motivação</td>
+            <td>
+                <textarea placeholder="O que te motiva a participar deste evento?" cols="29" rows="5" id="motivo"
+                    required name="motivo">
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" style="background-color:white ;">
+                <select id="modulo" required="true" name="modulo">
+                    <option value=""> Qual módulo estas cursando atualmente?</option>
+                    <option value="M1">M1</option>
+                    <option value="M2">M2</option>
+                    <option value="M3">M3</option>
+                    <option value="M4">M4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="color:white ;">Crie uma senha</td>
+            <td><input type="password" placeholder="Digite a sua senha" required="true" id="senha" name="senha"
+                    size="29"></td>
+        </tr>
+        <tr>
+            <td align="center" style="color:white ;">Confirme a senha</td>
+            <td><input type="password" placeholder="Digite a sua senha" required="true" id="senha" name="senha"
+                    size="29"></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2" style="color:white ;"> Deseja Receber novidades?
+                <input type="radio" name="news" value="sim" id="Sim" required> <b style="color:white ;">Sim</b>
+                <input type="radio" name="news" value="input" id="Nao" required> <b style="color:white ;">Não</b>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table align="center">
+    <tfoot>
+        <tr>
+            <td>
+                <b><button type="reset">Resetar Formulário</button></b>
+                <button type="submit">Enviar Formulário</button></b>
+            </td>
+        </tr>
+    </tfoot>
+</table>
